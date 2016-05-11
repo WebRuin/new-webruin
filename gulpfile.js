@@ -38,7 +38,7 @@ gulp.task('compile-sass', () => {
 
 // Rebuild Jekyll
 gulp.task('build-jekyll', (code) => {
-  return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
+  return cp.spawn('jekyll', ['build'], ['watch'], {stdio: 'inherit'})
     .on('error', (error) => gutil.log(gutil.colors.red(error.message)))
     .on('close', code);
 })
