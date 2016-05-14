@@ -13,8 +13,9 @@ description: > # this means to ignore newlines until "baseurl:"
   We will work with you to find the best possible web solution for your needs
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://webruin.local:4000" # the base hostname & protocol for your site
-twitter_username: timsmith23
 github_username:  WebRuin
+facebook_username: tim.smith
+twitter_username: timsmith23
 
 # Build settings
 markdown: kramdown
