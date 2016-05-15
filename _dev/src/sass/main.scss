@@ -732,7 +732,11 @@
 		background-repeat: repeat, no-repeat;
 		padding: 14em 0 14em 0;
 		text-align: center;
+		justify-content: center;
 		color: #fff;
+		display: flex;
+		align-items: center;
+		height: 100vh;
 
 		header {
 			h1 {
