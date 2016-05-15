@@ -70,8 +70,8 @@
 	}
 
 	.dark {
-		color: #aaa;
-		color: rgba(255, 255, 255, 0.65);
+		color: #fff;
+		color: rgba(255, 255, 255, 0.67);
 	}
 
 	input, textarea, select {
@@ -111,6 +111,13 @@
 			color: #fff;
 			color: rgba(255, 255, 255, 0.85);
 		}
+	}
+
+	i.fa {
+		display: block;
+		font-size: 4rem;
+		padding-bottom: 0.6rem;
+		color: rgba(0,0,0,0.6);
 	}
 
 	em, i {
@@ -680,7 +687,7 @@
 	.dark {
 		.feature-icon {
 			.icon {
-				background: rgba(255, 255, 255, 0.15);
+				background: rgba(255, 76, 0, 0.67);
 				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 				color: #fff;
 			}
@@ -796,7 +803,10 @@
 			}
 
 			&.style2 {
-				background: url('images/bgtr.svg') top right no-repeat, url('images/bgbl.svg') bottom left no-repeat, url('images/overlay.png'), linear-gradient(45deg, #384955, #655361, #85505f);
+				background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%, rgba(255, 76, 0, 0.40) 64%), url(../img/F100008288-min.jpg);
+				background-size: cover;
+				background-position:center center;
+    		background-repeat: repeat,no-repeat;
 			}
 
 			&.style3 {
