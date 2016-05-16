@@ -25,7 +25,10 @@
   <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="{{ "assets/css/main.css" | prepend: site.baseurl }}">
+  <script>
+    loadCSS( "assets/css/main.css" );
+  </script>
+  <link rel="preload" href="{{ "assets/css/main.css" | prepend: site.baseurl }}" as="style" onload="this.rel='stylesheet'">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
