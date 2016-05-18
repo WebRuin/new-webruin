@@ -9,7 +9,10 @@ const gulp = require('gulp'),
       connect = require('gulp-connect'),
       cp = require('child_process'),
       browserSync = require('browser-sync').create(),
-      siteRoot = '_site';
+      uncss = require('gulp-uncss'),
+      concat = require('gulp-concat');
+
+const siteRoot = '_site';
 
 // Set the path variables
 const base_path = './',
@@ -36,6 +39,10 @@ gulp.task('compile-sass', () => {
     .pipe(sass())
     .pipe(prefixer('last 3 versions', 'ie 9'))
     .pipe(minifyCSS())
+    .pipe(concat('main.css'))
+    .pipe(uncss({
+            html: ['/**/*.html', 'http://127.0.0.1:4000']
+        }))
     .pipe(rename({dirname: dist + '/css'}))
     .pipe(gulp.dest('./'));
 });
